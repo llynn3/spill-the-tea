@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+Spill The Tea
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+This app allows users to interact with others by writing their own thoughts/comments about boba or drink recommendations and have others write notes/reviews on it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![wireframes (2)](https://user-images.githubusercontent.com/88290507/134059947-a9efcba5-5b90-4493-8c16-d05ddf05cb5b.jpg)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Component Hierarchy
 
-### `npm run build`
+![component hierarchy](https://user-images.githubusercontent.com/88290507/134060246-0bb2eea8-717f-4b69-b1d0-3b1ad9576020.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API and Data Sample
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Example Link: 
 
-### `npm run eject`
+https://api.airtable.com/v0/AIRTABLE_BASE_ID/posts?api_key=MY_API_KEY
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```json
+{
+    "records": [
+        {
+            "id": "recAAMbyIFZxiV2UW",
+            "fields": {
+                "text": "Go to boba spot?",
+                "postedBy": "bobalover",
+                "comments": "Taste Tea!"
+            },
+            "createdTime": "2021-09-20T16:30:16.000Z"
+        },
+        {
+            "id": "recV1J4ZBQKaBap3X",
+            "fields": {
+                "text": "Thinking of milk tea today.",
+                "postedBy": "iscreamformilktea",
+                "comments": "I recommend the taro milk tea from Share Tea!"
+            },
+            "createdTime": "2021-09-20T16:30:16.000Z"
+        },
+        {
+            "id": "recjNO4r5lls5qbU6",
+            "fields": {
+                "text": "Feeling fruity today.",
+                "postedBy": "fruitloops",
+                "comments": "Get the snow strawberry lulu from The Alley if you're near one!"
+            },
+            "createdTime": "2021-09-20T16:30:16.000Z"
+        }
+    ],
+    "offset": "recjNO4r5lls5qbU6"
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### MVP/PostMVP
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### MVP 
+- Create structure in React and using React Router
+- Create an Airtable base and handle GET, POST, and PUT axios request
+- Be able to render the posts onto the page
+- Let users add and edit posts
+- Let users to comment on other posts
+- Use flexbox and grid for page structure
+- Hide API keys
+- Have site be responsive on mobile
 
-## Learn More
+#### PostMVP  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Allow users to vote on posts
+- Add second API  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Timeframes
 
-### Code Splitting
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Planning | H | 3hrs |
+| Routing Setup | H  | 2hrs |
+| Working with API | H | 3hrs |
+| Axios Calling/Requests | H | 3hrs |
+| Rendering Posts | H | 3hrs |
+| Page Styling | M | 2hrs |
+| Wireframes | H | 2hrs |
+| Airtable Setup | H | 2hrs |
+| Adding Form | M | 2hrs |
+| Responsiveness | H | 3hrs |
+| Display Content | M | 2hrs |
+| Search Page Setup | M | 3hrs |
+| Debugging | M | 3hrs |
+| Deployment | H | 2hrs |
+| Text style/colors | L | 2hrs |
+| Total | H | 37hrs |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## SWOT Analysis
 
-### Analyzing the Bundle Size
+### Strengths:
+In react, the only comfort I really have is rendering data from AirTable API onto the page and deleting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Weaknesses:
+I am most worried about is my initial construction and making components. I think figuring out the order will be a challenge for me.
 
-### Making a Progressive Web App
+### Opportunities:
+I have the opportunity to work on having a more understanding of how React works. This will push me to get my fundamentals down.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Threats:
+I have the tendency to overthink a lot of things and doubt myself. But I understand getting things right takes practice and making mistakes to laern from them. Also when really needing help, I need to reach out. I want to make sure I get down all my MVP and have everything working before the post MVP.
