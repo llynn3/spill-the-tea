@@ -42,10 +42,10 @@ function Form(props) {
             <label htmlFor="postedBy">Username:</label>
             <input id="postedBy" type="text" required autoComplete="off" autoFocus value={postedBy} onChange={(e) => setPostedBy(e.target.value)}
             />
-            <label htmlFor="text">What's up?</label>
+            <label htmlFor="text">What's the tea?</label>
             <input id="text" required value={text} onChange={(e) => setText(e.target.value)} 
             />
-            <button type="submit">Order's up!</button>
+            <button type="submit">Submit</button>
         </form>
     );
 }

@@ -23,13 +23,17 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <main>
-          {posts.map((post) => ( <Post key={post.id} post={post} />
+      <main>
+          {posts.map((post) => ( <Post key={post.id} post={post} setToggleFetch={setToggleFetch}/>
           ))}
         </main>
       </Route>
       <Route path="/new">
-        <Form setToggleFetch={setToggleFetch} />
+      <Form setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/edit/:id">
+        <Form posts={posts}
+        setToggleFetch={setToggleFetch} />
       </Route>
     </div>
   );
