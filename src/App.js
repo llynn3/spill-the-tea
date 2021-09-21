@@ -4,6 +4,7 @@ import axios from "axios";
 import { baseURL, config } from "./services";
 import Post from "./components/Posts";
 import Nav from "./components/Nav";
+import Form from "./components/Form";
 import './App.css';
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
           {posts.map((post) => ( <Post key={post.id} post={post} />
           ))}
         </main>
+      </Route>
+      <Route path="/new">
+        <Form setToggleFetch={setToggleFetch} />
       </Route>
     </div>
   );
