@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
+import axios from "axios";
 import { baseURL, config } from "./services";
+import Post from "./components/Post";
 import Nav from "./components/Nav";
 import './App.css';
-import axios from "axios";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -22,6 +23,8 @@ function App() {
       <Nav />
       <Route exact path="/">
         <main>
+          {posts.map((post) => ( <Post key={post.id} post={post} />
+          ))}
         </main>
       </Route>
     </div>
