@@ -5,8 +5,7 @@ import { useHistory, useParams } from "react-router-dom";
 
 function Form(props) {
     const [text, setText] = useState("");
-    const [username, setUsername] = useState("");
-    const [comments, setComments] = useState("");
+    const [postedBy, setPostedBy] = useState("");
     const history = useHistory();
     const params = useParams();
 
@@ -16,8 +15,7 @@ function Form(props) {
 
             if (post) {
                 setText(post.fields.text);
-                setUsername(post.fields.username);
-                setComments(post.fields.comments);
+                setPostedBy(post.fields.postedBy);
             }
         }
     }, [params.id, props.posts]);
@@ -26,8 +24,7 @@ function Form(props) {
         e.preventDefault();
         const newPost = {
             text,
-            username,
-            comments,
+            postedBy,
         }
 
         if (params.id) {
@@ -42,10 +39,10 @@ function Form(props) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="username">Username:</label>
-            <input id="username" type="text" required autoComplete="off" autoFocus value={username} onChange={(e) => setUsername(e.target.value)}
+            <label htmlFor="postedBy">Username:</label>
+            <input id="postedBy" type="text" required autoComplete="off" autoFocus value={postedBy} onChange={(e) => setPostedBy(e.target.value)}
             />
-            <label htmlFor="text">Comments:</label>
+            <label htmlFor="text">What's up?</label>
             <input id="text" required value={text} onChange={(e) => setText(e.target.value)} 
             />
             <button type="submit">Order's up!</button>

@@ -12,11 +12,11 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
-    const getPosts = async () => {
+    const fetchPosts = async () => {
       const response = await axios.get(baseURL, config);
       setPosts(response.data.records);
     }
-    getPosts();
+    fetchPosts();
   }, [toggleFetch]);
 
   return (
