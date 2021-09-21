@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
-import Post from "./components/Post";
+import Post from "./components/Posts";
 import Nav from "./components/Nav";
 import './App.css';
 
