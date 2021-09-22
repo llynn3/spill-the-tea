@@ -5,6 +5,7 @@ import { baseURL, config } from "./services";
 import Post from "./components/Posts";
 import Nav from "./components/Nav";
 import Form from "./components/Form";
+import Footer from "./components/Footer";
 import './App.css';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Form posts={posts}
         setToggleFetch={setToggleFetch} />
       </Route>
+      <Footer />
     </div>
   );
 }
