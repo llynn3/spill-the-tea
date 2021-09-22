@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
+import Header from "./components/Header";
+import About from "./components/About";
 import Post from "./components/Posts";
 import Nav from "./components/Nav";
 import Form from "./components/Form";
@@ -22,7 +24,9 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Nav />
+      <About />
       <Route exact path="/">
       <main>
           {posts.map((post) => ( <Post key={post.id} post={post} setToggleFetch={setToggleFetch}/>
