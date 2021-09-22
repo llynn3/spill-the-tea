@@ -1,38 +1,55 @@
-.App {
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media screen and (max-width: 450px) {
+    * {
+      background-color:whitesmoke;
+      font-family: 'Helvetica', Times, serif;
+      font-size: 15px;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    button {
+      font-family: 'Hammersmith One', sans-serif;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 15px;
+      background: salmon;
+      padding: 3px 5px 3px 5px;
+      border: none;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    header {
+      flex-direction: column;
+      height: 10vh;
+      align-items: center;
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    footer {
+      text-align: center;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    main {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 5px;
+      /* border: solid 1px; */
+    }
+
+    nav {
+      background-color: salmon;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .link {
+      font-family: arial;
+      font-size: 15px;
+    }
 }

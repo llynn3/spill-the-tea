@@ -14,7 +14,7 @@ function Post(props) {
     return (
         <div className="post">
             <h2>{text}</h2>
-            <h3>username: {postedBy}</h3>
+            <h3>Posted By: {postedBy}</h3>
             <Link to={`/view/${props.post.id}`}>
             <button>Get the tea.</button>
             </Link>

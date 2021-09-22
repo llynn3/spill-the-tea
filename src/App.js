@@ -24,9 +24,6 @@ function App() {
     fetchPosts();
   }, [toggleFetch]);
 
-//   const handleSeeComments = () => {
-//     history.push(`/view/$props.post.id}`);
-// }
 
   return (
     <div className="App">
@@ -43,7 +40,7 @@ function App() {
       <Form setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/view/:id">
-        <ViewComments posts={posts} />
+        <ViewComments posts={posts} setToggleFetch={setToggleFetch} />
         </Route>
       <Route path="/edit/:id">
         <Form posts={posts}
