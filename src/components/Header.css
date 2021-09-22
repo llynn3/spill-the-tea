@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light');
+
+header {
+    background-color:whitesmoke;
+    align-items: center;
+    color: black;
+    font-family: 'Shadows Into Light', helvetica;
+    font-size: 25px;
+    padding: 0px;
+    max-width: 100vw;
+};
+
+.sub-header {
+    font-family: 'Shadows Into Light', helvetica;
+}
