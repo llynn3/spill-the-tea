@@ -6,7 +6,6 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Post from "./components/Posts";
 import ViewComments from "./components/ViewComments";
-// import Comment from "./components/AddComment";
 import Nav from "./components/Nav";
 import Form from "./components/Form";
 import Footer from "./components/Footer";

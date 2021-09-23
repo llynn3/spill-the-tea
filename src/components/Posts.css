@@ -15,7 +15,7 @@
     margin: 20px;
     overflow: hidden;
     padding: 15px;
-    width: 280px;
+    width: 230px;
 }
 
 .post button:hover {
@@ -33,17 +33,18 @@
 button {
     font-family: 'Staatliches', sans-serif;
     color: white;
-    float: left;
+    float: center;
     text-align: center;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    font-stretch: expanded;
+    letter-spacing: 3px;
     background: #F5CEC7;
-    padding: 3px 5px 3px 5px;
+    padding: 2px 4px 2px 4px;
     border: none;
-    width: 280px;
+    width: 200px;
     margin: 5px;
+    height: 25px;
 }
 
 h2 {
@@ -54,7 +55,7 @@ h2 {
 }
 
 h3 {
-    font-size: 17px;
+    font-size: 16px;
     background-color: #B6B4C2;
     border-radius: 5px;
     padding: 10px;
