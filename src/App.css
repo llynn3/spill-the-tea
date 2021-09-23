@@ -2,7 +2,6 @@ body {
   background-color: #E4C7B7;
 }
 
-
 main {
   display: flex;
   flex-flow: row wrap;
@@ -14,26 +13,20 @@ main {
 }
 
 @media screen and (max-width: 450px) {
-    * {
-      background-color:whitesmoke;
-      font-family: 'Helvetica', Times, serif;
-      font-size: 15px;
-    }
-
     button {
       font-family: 'Hammersmith One', sans-serif;
       color: white;
       text-align: center;
       border-radius: 8px;
-      font-size: 15px;
-      background: salmon;
+      font-size: 14px;
       padding: 3px 5px 3px 5px;
       border: none;
     }
 
     header {
+      background-color: #E4C7B7;
       flex-direction: column;
-      height: 10vh;
+      font-size: 16px;
       align-items: center;
     }
 
@@ -42,22 +35,33 @@ main {
     }
 
     main {
+      background-color: #E4C7B7;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 5px;
-      /* border: solid 1px; */
+      height: auto;
     }
 
     nav {
-      background-color: salmon;
+        background-color: #E4C7B7;
+        margin: 10px;
     }
 
     .about {
+      background-color: white;
+      font-family: Helvetica;
       text-align: center;
+      font-size: 14px;
+      padding: 5px;
     }
 
     .link {
+      background-color: #E4C7B7;
       font-family: arial;
-      font-size: 15px;
+      font-size: 14px;
+    }
+
+    .post {
+      max-width: 100vmin;
     }
 }
