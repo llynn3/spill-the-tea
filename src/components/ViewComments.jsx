@@ -17,11 +17,6 @@ useEffect(() => {
     };
 }, [params.id, props.posts]);
 
-const removePost = async () => {
-    const postURL = `${baseURL}/${props.post.id}`;
-    await axios.delete(postURL, config);
-    props.setToggleFetch((curr) => !curr);
-}
 
     return (
         <div className="selected-post">
@@ -30,7 +25,6 @@ const removePost = async () => {
             <section className="view-comments">
                 The tea: {post?.fields?.comments}
             </section>
-            <button onClick={removePost}>Clean your mess.</button>
         </div>
     )
 }

@@ -3,7 +3,7 @@
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 0px;
 }
 
