@@ -2,6 +2,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { baseURL, config } from "../services";
+import './ViewComments.css';
 
 function ViewComments(props) {
 const [post, setPost] = useState({});
@@ -20,10 +21,10 @@ useEffect(() => {
 
     return (
         <div className="selected-post">
-            <p>{post?.fields?.text}</p>
-            <p>Posted By: {post?.fields?.postedBy}</p>
+            <p className="text">{post?.fields?.text}</p>
+            <p className="posted-by">Posted By: {post?.fields?.postedBy}</p>
             <section className="view-comments">
-                The tea: {post?.fields?.comments}
+                Comments: {post?.fields?.comments}
             </section>
         </div>
     )

@@ -1,0 +1,34 @@
+.posted-by {
+    background-color: #B6B4C2;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 280px;
+}
+
+.selected-post {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    background-color: #AAC9CE;
+    border-radius: 15px;
+    margin: auto;
+    overflow: hidden;
+    padding: 15px;
+    width: 280px;
+}
+
+.text {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 280px;
+}
+
+.view-comments {
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 280px;
+}

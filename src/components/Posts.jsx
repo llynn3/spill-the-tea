@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { baseURL, config } from "../services";
+import { useEffect, useState } from "react";
 import './Posts.css';
 
 function Post(props) {
@@ -24,6 +25,8 @@ function Post(props) {
                 <button>Fix a lil sumsum'</button>
             </Link>
         </div>
+
+        
     )
 }
 
