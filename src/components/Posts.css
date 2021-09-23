@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches');
+
+.link {
+    display:flex;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    background-color: #AAC9CE;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+    padding: 20px;
+    width: 300px;
+}
+
+.post button:hover {
+    background-color: #B6B4C2;
+}
+
+button {
+    font-family: 'Staatliches', sans-serif;
+    color: white;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: expanded;
+    background: #F5CEC7;
+    padding: 3px 5px 3px 5px;
+    border: none;
+    width: 300px;
+    margin: 5px;
+}
+
+h2 {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h3 {
+    background-color: #B6B4C2;
+    border-radius: 5px;
+    padding: 10px;
+}

@@ -1,5 +1,7 @@
+import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { baseURL, config } from "../services";
 
 function ViewComments(props) {
 const [post, setPost] = useState({});
@@ -15,6 +17,12 @@ useEffect(() => {
     };
 }, [params.id, props.posts]);
 
+const removePost = async () => {
+    const postURL = `${baseURL}/${props.post.id}`;
+    await axios.delete(postURL, config);
+    props.setToggleFetch((curr) => !curr);
+}
+
     return (
         <div className="selected-post">
             <p>{post?.fields?.text}</p>
@@ -22,6 +30,7 @@ useEffect(() => {
             <section className="view-comments">
                 The tea: {post?.fields?.comments}
             </section>
+            <button onClick={removePost}>Clean your mess.</button>
         </div>
     )
 }
