@@ -6,6 +6,7 @@ export default function Nav() {
         <nav>
             <Link to="/" className="link">Home </Link>
             <Link to="/new" className="link">Share your tea!</Link>
+            <Link to="/search" className="link">Find boba near you</Link>
         </nav>
     )
 }

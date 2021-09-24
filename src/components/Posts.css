@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
 
 .link {
     display:flex;
+    color: #81544c;
 }
 
 .post {
@@ -10,19 +12,22 @@
     flex-direction: column;
     font-family: 'Comfortaa', sans-serif;
     text-align: center;
-    background-color: #AAC9CE;
-    border-radius: 15px;
+    background-color: #c2c2c2;
+    border-radius: 10px;
     margin: 20px;
     overflow: hidden;
-    padding: 15px;
-    width: 230px;
+    padding: 10px;
+    width: 280px;
+    border: solid;
+    border-color: #81544c;
 }
 
 .post button:hover {
-    background-color: #B6B4C2;
+    background-color: #738e93;
 }
 
 #delete {
+    background-color: #c2c2c2;
     border-radius: 50%;
     font-family: georgia; 
     font-size: 14px;
@@ -32,31 +37,31 @@
 
 button {
     font-family: 'Staatliches', sans-serif;
-    color: white;
-    float: center;
-    text-align: center;
+    color: #986960;
+    float: left;
+    text-align: right;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    letter-spacing: 3px;
-    background: #F5CEC7;
-    padding: 2px 4px 2px 4px;
+    font-stretch: expanded;
+    background: #c2c2c2;
+    padding: 3px 5px 3px 5px;
     border: none;
-    width: 200px;
+    width: 280px;
     margin: 5px;
-    height: 25px;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 17px;
     background-color: whitesmoke;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 1px;
+    padding: 8px;
 }
 
 h3 {
-    font-size: 16px;
-    background-color: #B6B4C2;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 25px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 2px;
+    text-align: left;
 }

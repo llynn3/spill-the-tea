@@ -35,21 +35,22 @@ function ViewComments(props) {
 
   return (
     <div className="selected-post">
-      <p className="text">{post?.fields?.text}</p>
       <p className="posted-by">Posted By: {post?.fields?.postedBy}</p>
+      <p className="text">{post?.fields?.text}</p>
       <section className="view-comments">
         Comments: {post?.fields?.comments}
       </section>
       <div className="comment-container">
         Add your own comment!
+        <div className="input-comment">
         <Comment comments={comments} setToggleFetch={setToggleFetch} />
         {comments.map((comment) => (
           <Comments key={comment.id} comment={comment} /> 
         ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default ViewComments;
-

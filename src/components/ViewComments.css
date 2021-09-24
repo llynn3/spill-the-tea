@@ -1,7 +1,15 @@
+.comment-container {
+    padding: 15px;
+}
+
+.input-comment {
+    padding: 15px;
+}
+
 .posted-by {
-    background-color: #B6B4C2;
+    font-family: 'Abril Fatface', sans-serif;
     border-radius: 5px;
-    font-weight: bold;
+    font-size: 25px;
     padding: 5px;
     width: 280px;
 }
@@ -12,7 +20,7 @@
     flex-direction:column;
     font-family: 'Comfortaa', sans-serif;
     text-align: center;
-    background-color: #AAC9CE;
+    background-color: #c2c2c2;
     border-radius: 15px;
     margin: auto;
     overflow: hidden;
@@ -24,15 +32,15 @@
     background-color: whitesmoke;
     border-radius: 5px;
     font-weight: bold;
-    padding: 5px;
+    padding: 8px;
     width: 280px;
 }
 
 .view-comments {
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 5px;
     text-align: left;
     font-weight: bold;
     width: 280px;
-    padding: 5px;
+    padding: 10px;
 }

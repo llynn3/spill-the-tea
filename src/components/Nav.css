@@ -3,8 +3,9 @@
 nav {
     display: flex;
     justify-content: space-evenly;
-    /* background-color: whitesmoke; */
-    padding: 0px;
+    flex-direction: column;
+    flex-flow: row;
+    padding: 5px;
 }
 
 .link {

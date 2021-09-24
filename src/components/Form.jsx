@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import { useHistory, useParams } from "react-router-dom";
+import "./Form.css";
 
 function Form(props) {
     const [text, setText] = useState("");
@@ -38,15 +39,23 @@ function Form(props) {
     }
 
     return (
+        <div className="form-container">
         <form onSubmit={handleSubmit}>
+            <p className="username">
             <label htmlFor="postedBy">Username:</label>
             <input id="postedBy" type="text" required autoComplete="off" autoFocus value={postedBy} onChange={(e) => setPostedBy(e.target.value)}
             />
+            </p>
+            <p className="insert-text">
             <label htmlFor="text">What's the tea?</label>
             <input id="text" required value={text} onChange={(e) => setText(e.target.value)} 
             />
+            </p>
+            <div className="submit-button">
             <button type="submit">Submit</button>
+            </div>
         </form>
+        </div>
     );
 }
 

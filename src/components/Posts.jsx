@@ -15,14 +15,16 @@ function Post(props) {
     return (
         <div className="post">
             <button onClick={removePost} id="delete" title="Delete!">X</button>
+            <h3>{postedBy}:</h3>
             <h2>{text}</h2>
-            <h3>Posted By: {postedBy}</h3>
+            <section className="options-container">
             <Link to={`/view/${props.post.id}`}>
             <button>Get the tea.</button>
             </Link>
             <Link to={`/edit/${props.post.id}`}>
-                <button>Fix a lil sumsum'</button>
+                <button>Edit</button>
             </Link>
+            </section>
         </div>
 
         
