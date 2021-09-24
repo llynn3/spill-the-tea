@@ -26,12 +26,12 @@ function ViewComments(props) {
 
       useEffect(() => {
         const fetchComments = async () => {
-          const response = await axios.get(baseCommentsURL, config);
+          const response = await axios.get(`${baseCommentsURL}?filterByFormula=postId%3D'${params.id}'`, config);
           setComments(response.data.records);
           console.log(response.data.records);
         }
         fetchComments();
-      }, [toggleFetch]);
+      }, [toggleFetch, params.id]);
 
   return (
     <div className="selected-post">

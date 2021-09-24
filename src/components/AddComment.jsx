@@ -22,7 +22,7 @@ function Comment(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const newComment = {
-            id: params.id,
+            postId: params.id,
             commentInput: comment,
             usernameInput: name,
         };
