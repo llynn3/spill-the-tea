@@ -42,9 +42,6 @@ function App() {
       <Route path="/view/:id">
         <ViewComments posts={posts} setToggleFetch={setToggleFetch} />
       </Route>
-      {/* <Route path="/add">
-      <AddComment posts={posts} setToggleFetch={setToggleFetch} />
-      </Route> */}
       <Route path="/edit/:id">
         <Form posts={posts}
         setToggleFetch={setToggleFetch} />
