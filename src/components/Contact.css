@@ -1,0 +1,10 @@
+.contact-container {
+    display: flex;
+    text-align: center;
+    background-color: #c2c2c2;
+    font-family: 'Comfortaa', sans-serif;
+    margin: auto;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+}

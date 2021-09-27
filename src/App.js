@@ -9,6 +9,7 @@ import ViewComments from "./components/ViewComments";
 import Nav from "./components/Nav";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import './App.css';
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
         <Form posts={posts}
         setToggleFetch={setToggleFetch} />
       </Route>
+      <Route path="/contact">
+        <Contact />
+        </Route >
       <Footer />
     </div>
   );

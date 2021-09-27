@@ -7,6 +7,7 @@ export default function Nav() {
             <Link to="/" className="link">Home </Link>
             <Link to="/new" className="link">Share your tea!</Link>
             {/* <Link to="/search" className="link">Find boba near you</Link> */}
+            <Link to="/contact" className="link">Contact me</Link>
         </nav>
     )
 }
