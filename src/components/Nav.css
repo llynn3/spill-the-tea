@@ -6,9 +6,11 @@ nav {
     flex-direction: column;
     flex-flow: row;
     padding: 5px;
+    background-color: #986960;
 }
 
 .link {
     font-family: 'Shadows Into Light', helvetica;
     font-size: 25px;
+    color: #EFE4DC;
 }

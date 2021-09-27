@@ -66,9 +66,14 @@ header {
       background-color: #E4C7B7;
       font-family: arial;
       font-size: 14px;
+      color: #986960;
     }
 
     .post {
       max-width: 100vmin;
+    }
+
+    button {
+      color: #986960;
     }
 }

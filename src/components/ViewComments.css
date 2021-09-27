@@ -31,7 +31,6 @@
 .text {
     background-color: whitesmoke;
     border-radius: 5px;
-    font-weight: bold;
     padding: 8px;
     width: 280px;
 }
@@ -40,7 +39,6 @@
     background-color: whitesmoke;
     border-radius: 5px;
     text-align: left;
-    font-weight: bold;
     width: 280px;
     padding: 10px;
 }
