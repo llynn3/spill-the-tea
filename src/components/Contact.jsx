@@ -10,8 +10,6 @@ function Contact() {
                         <input type="text" name="name" required className="input" placeholder="Name" />
                         <br />
                         <input className="input" name="email" type="email" placeholder="Email" />
-                        <br />
-                        {/* <input type="text" name="message" required className="input" placeholder="Your message" /> */}
                         <button>Submit</button>
                     </form>
                 </div>

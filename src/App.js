@@ -20,7 +20,6 @@ function App() {
     const fetchPosts = async () => {
       const response = await axios.get(baseURL, config);
       setPosts(response.data.records);
-      console.log(response.data.records);
     }
     fetchPosts();
   }, [toggleFetch]);
@@ -47,6 +46,9 @@ function App() {
         <Form posts={posts}
         setToggleFetch={setToggleFetch} />
       </Route>
+      <Route path="/search">
+        {/* <Search setToggleFetch={setToggleFetch}/> */}
+        </Route>
       <Route path="/contact">
         <Contact />
         </Route >
