@@ -12,6 +12,10 @@ main {
   position: relative;
 }
 
+header {
+  justify-content: center;
+}
+
 @media screen and (max-width: 450px) {
     button {
       font-family: 'Hammersmith One', sans-serif;
