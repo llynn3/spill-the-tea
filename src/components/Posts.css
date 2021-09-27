@@ -12,7 +12,7 @@
     flex-direction: column;
     font-family: 'Comfortaa', sans-serif;
     text-align: center;
-    background-color: #c2c2c2;
+    background-color: #C4D7E5;
     border-radius: 10px;
     margin: 20px;
     overflow: hidden;
@@ -23,14 +23,14 @@
 }
 
 .post button:hover {
-    background-color: #738e93;
+    background-color: #EFE4DC;
 }
 
 #delete {
-    background-color: #c2c2c2;
+    background-color: #EFE4DC;
     border-radius: 50%;
     font-family: georgia; 
-    font-size: 14px;
+    font-size: 13px;
     color: black;
     width: 20px;
 }
@@ -44,7 +44,7 @@ button {
     font-size: 20px;
     font-weight: bold;
     font-stretch: expanded;
-    background: #c2c2c2;
+    background: #C4D7E5;
     padding: 3px 5px 3px 5px;
     border: none;
     width: 280px;

@@ -5,8 +5,8 @@ const Comments = (props) => {
 
     return (
         <div className="comment">
-            <h3>{commentInput}</h3>
-            <h4>{usernameInput}</h4>
+            <h3>posted by: {usernameInput}</h3>
+            <h4>{commentInput}</h4>
         </div>
     )
 }

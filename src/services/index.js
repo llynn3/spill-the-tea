@@ -6,3 +6,11 @@ export const config = {
 };
 
 export const baseCommentsURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/comments`
+
+export const searchURL = `https://cors-lite.herokuapp.com/https://api.yelp.com/v3/businesses/search`
+
+export const yelpConfig = {
+    headers: {
+        Authorization: `Bearer ${process.env.YELP_APP_KEY}`,
+    },
+};
